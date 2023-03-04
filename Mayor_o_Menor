@@ -1,0 +1,16 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	
+	int edad;
+	cout<<"introduce tu edad";
+	cin>> edad;
+	if(edad>=18){
+		cout<<"eres MAYOR de edad";
+	}
+	else{
+		cout<<"eres MENOR de edad";
+	}
+}
