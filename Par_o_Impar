@@ -1,0 +1,27 @@
+#include<stdio.h>
+int espar(int num){
+	int respuesta;
+	if(num%2==0){
+		respuesta=1;
+	}else{
+		respuesta=0;
+	}
+	
+	
+	
+	return(respuesta);
+}
+
+int main(){
+	int num;
+	printf("numero a estudiar: ");
+	scanf("%d",&num);
+	
+	if(espar(num)==1){
+		printf("el numero %d es par",num);
+	}else{
+		printf("el numero %d es impar",num);
+	}
+	
+	return 0;
+}
