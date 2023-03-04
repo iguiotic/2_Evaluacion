@@ -1,0 +1,28 @@
+#include<stdio.h>
+int polidivisible(int numero){
+	int divisible;
+	if(numero%2==0 && numero%3==0 && numero%5==0 && numero%7==0){
+		divisible=1;
+	}else{
+		divisible=0;
+	}
+	
+	
+	
+	return(divisible);	
+}
+int main(){
+	int numero;
+	printf("numero: ");
+	scanf("%d",&numero);
+
+	if(polidivisible(numero)==1){
+		printf("el numero %d es divisible entre 2, 3, 5 y 7");
+	}else{
+		printf("el numero %d NO es divisible entre 2, 3, 5 y 7");	
+	}
+	
+	
+	
+	return 0;
+}
